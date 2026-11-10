@@ -48,7 +48,7 @@ Pierwsza faza śledztwa obejmowała analizę zapisu komunikacji sieciowej w prog
   Za pomocą funkcji `File -> Export Objects -> HTTP` oraz filtrów warstwy aplikacji (`http.request.method == "GET"`) zidentyfikowano pobrany złośliwy plik:
   * Nazwa pobranego pliku / skryptu: `shell.aspx`
 
-*(Opcjonalnie: `![Wireshark Analysis](lockdown_img/wireshark_pcap.png)`)*
+ ![Wireshark Analysis](lockdown_img/wireshark_pcap.png)
 
 ---
 
