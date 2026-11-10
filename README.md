@@ -7,7 +7,7 @@
 
 ---
 
-##  1. Streszczenie Zarządcze (Executive Summary)
+##  1. Streszczenie Zarządcze 
 
 Niniejszy dokument stanowi techniczny raport z analizy powłamaniowej (Incident Response & Digital Forensics) przeprowadzonej po wykryciu podejrzanej aktywności na firmowym serwerze webowym opartym o usługę **Microsoft IIS**. 
 
@@ -35,7 +35,7 @@ W toku dochodzenia przeanalizowano przechwycony ruch sieciowy (`.pcap`), zrzut p
 
 ---
 
-##  4. Przebieg Śledztwa (Step-by-Step Investigation)
+##  4. Przebieg Śledztwa 
 
 ### Etap I: Analiza Ruchu Sieciowego (Network Forensics – PCAP)
 
@@ -105,7 +105,7 @@ Obliczony skrót kryptograficzny SHA256 próbki skorelowano z raportami z piasko
 * **Ustalenie (Q10 – Kontaktowana domena C2 / FQDN):** `cp8nl.hyperhost.ua`
 * **Ustalenie (Q11 – Klasyfikacja rodziny malware):** `AgentTesla`
 
-##  5. Wskaźniki Kompromitacji (Indicators of Compromise – IoC)
+##  5. Wskaźniki Kompromitacji 
 
 | Typ IoC | Wartość | Kontekst / Opis |
 | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ Obliczony skrót kryptograficzny SHA256 próbki skorelowano z raportami z piasko
    * Wdrożenie reguł **ASR (Attack Surface Reduction)** oraz monitoringu **Sysmon (Event ID 1)** alarmujących o każdym przypadku, w którym proces `w3wp.exe` uruchamia procesy potomne (`cmd.exe`, `powershell.exe` lub binarki z katalogów `ProgramData` / `Users`).
 4. **Rotacja poświadczeń:** Ze względu na specyfikę działania infostealera **AgentTesla** (kradzież danych uwierzytelniających z przeglądarek, klientów pocztowych i schowka), konieczne jest unieważnienie aktywnych sesji oraz wymuszenie zmiany haseł dla wszystkich kont obecnych na serwerze.
 
-##  Napotkane Problemy i Sposób Ich Rozwiązania (Troubleshooting & Lessons Learned)
+##  Napotkane Problemy i Sposób Ich Rozwiązania 
 
 Podczas realizacji laboratorium napotkano szereg wyzwań środowiskowych oraz analitycznych:
 
